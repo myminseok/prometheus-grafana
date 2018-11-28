@@ -1,7 +1,8 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: ci-storage
+  name: monitor-storage
 provisioner: kubernetes.io/vsphere-volume
+allowVolumeExpansion: true
 parameters:
   diskformat: zeroedthick
